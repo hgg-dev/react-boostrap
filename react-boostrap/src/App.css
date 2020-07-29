@@ -1,5 +1,20 @@
+/*
+ Color Scheme
+ Primary: #4D28C4 
+ Primary border: #280C83
+ Secondary: #FF9D19
+ Highlight: #D2F918
+
+ http://paletton.com/#uid=34e0I0ksRDihTLUnnGJBwv6CnnS
+ */
+
 .App {
   text-align: center;
+}
+
+.container_border_primary {
+  background-color: #4d28c4;
+  margin: 30px 0;
 }
 
 .App-logo {
@@ -35,4 +50,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Body */
+
+.box_standard {
+  margin: 40px;
+  display: flex;
+}
+.box_standard p {
+  color: white;
+}
+
+.icon-large {
+  font-size: 80px;
+  color: white;
+}
+
+.box-child {
+  max-width: 300px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.box-child .fas {
 }

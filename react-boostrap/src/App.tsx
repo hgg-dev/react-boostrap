@@ -23,12 +23,12 @@ function App() {
         <Container fluid>
           <Row>
             <NavHeader />
-            <Route path="/">
-              <Home />
-            </Route>
-            <Route path="/business-loans">
-              <BusinessLoans />
-            </Route>
+            <Route exact path="/" render={() => <Home />} />
+            <Route
+              exact
+              path="/business-loans"
+              render={() => <BusinessLoans />}
+            />
           </Row>
         </Container>
       </Switch>

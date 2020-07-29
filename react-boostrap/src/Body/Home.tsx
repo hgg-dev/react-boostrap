@@ -9,6 +9,7 @@ import {
   Carousel,
   Jumbotron,
   Container,
+  Row,
 } from "react-bootstrap";
 
 export default function Home() {
@@ -53,7 +54,51 @@ export default function Home() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      <Jumbotron fluid>
+
+      <Container fluid className={"container_border_primary"}>
+        <Row>
+          <Container className={"box_standard"}>
+            <div className={"box-child"}>
+              <div>
+                <i className={"fas fa-home icon-large"}></i>
+              </div>
+              <div>
+                <p>
+                  Need funding that's flexible and repayable over time? Our Judo
+                  Bank business loan provides options to support growth or
+                  investment in your business.
+                </p>
+              </div>
+            </div>
+            <div className={"box-child"}>
+              <div>
+                <i className={"fas fa-car icon-large"}></i>
+              </div>
+              <div>
+                <p>
+                  Need funding that's flexible and repayable over time? Our Judo
+                  Bank business loan provides options to support growth or
+                  investment in your business.
+                </p>
+              </div>
+            </div>
+            <div className={"box-child"}>
+              <div>
+                <i className={"fas fa-building icon-large"}></i>
+              </div>
+              <div>
+                <p>
+                  Need funding that's flexible and repayable over time? Our Judo
+                  Bank business loan provides options to support growth or
+                  investment in your business.
+                </p>
+              </div>
+            </div>
+          </Container>
+        </Row>
+      </Container>
+
+      <Jumbotron>
         <Container>
           <h1>Business finance</h1>
           <p>
