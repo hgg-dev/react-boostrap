@@ -1,5 +1,6 @@
 import React from "react";
-import { Jumbotron, Container, Row } from "react-bootstrap";
+import { Jumbotron, Container, Row, Form, Button } from "react-bootstrap";
+import ContactForm from "./Contact-Form";
 
 export default function Contacts() {
   return (
@@ -12,7 +13,7 @@ export default function Contacts() {
             </div>
             <img
               className={"banner_image"}
-              src="./images/banner1.jpg"
+              src="./images/banner-contact.jpeg"
               alt="Third slide"
             />
           </div>
@@ -22,15 +23,15 @@ export default function Contacts() {
             <div className={"text_child_container"}>
               <h3>Contact Us</h3>
               <ul>
-                <li>Choice of Variable or Fixed interest rate.</li>
-                <li>Fixed Rate available for added certainty.</li>
-                <li>Flexible repayment options.</li>
-                <li>Principal and interest, or interest-only repayments.</li>
+                <p>Phone: 1300 000 111</p>
+                <p>Email: info@wonderbank.com.au</p>
+                <p>Head Office: 90 Grand Pde, Sydney NSW 2000</p>
+                <p>Postal: GPO 9922, Sydney 2000</p>
               </ul>
-              <p></p>
             </div>
           </div>
         </Row>
+        <ContactForm />
       </Container>
     </>
   );

@@ -15,45 +15,30 @@ import {
 export default function Home() {
   return (
     <>
-      <Carousel>
-        <Carousel.Item>
-          <img
-            className="d-block w-100 home_banner"
-            src="https://assets.entrepreneur.com/content/3x2/2000/20190506145520-GettyImages-1091916996.jpeg"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100 home_banner"
-            src="https://assets.entrepreneur.com/content/3x2/2000/20190506145520-GettyImages-1091916996.jpeg"
-            alt="Third slide"
-          />
-
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100 home_banner"
-            src="https://assets.entrepreneur.com/content/3x2/2000/20190506145520-GettyImages-1091916996.jpeg"
-            alt="Third slide"
-          />
-
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+      <Container fluid>
+        <Row>
+          <div className={"home_banner_container"}>
+            <div className={"home_banner_tag"}>
+              <h2>Let us be your lighthouse</h2>
+            </div>
+            <div className={"home_banner_bottom1"}>
+              <Button href="/business-Loans" style={{ width: "150px" }}>
+                Business Loans
+              </Button>
+            </div>
+            <div className={"home_banner_bottom2"}>
+              <Button href="/contacts" style={{ width: "150px" }}>
+                Contact Us
+              </Button>
+            </div>
+            <img
+              className={"home_banner_image"}
+              src="./images/banner-lighthouse-sm.png"
+              alt="Third slide"
+            />
+          </div>
+        </Row>
+      </Container>
 
       <Container fluid className={"container_border_primary"}>
         <Row>
@@ -64,9 +49,9 @@ export default function Home() {
               </div>
               <div>
                 <p>
-                  Need funding that's flexible and repayable over time? Our Judo
-                  Bank business loan provides options to support growth or
-                  investment in your business.
+                  Need funding that's flexible and repayable over time? Our
+                  Wonder Bank business loan provides options to support growth
+                  or investment in your business.
                 </p>
               </div>
             </div>
@@ -76,9 +61,9 @@ export default function Home() {
               </div>
               <div>
                 <p>
-                  Need funding that's flexible and repayable over time? Our Judo
-                  Bank business loan provides options to support growth or
-                  investment in your business.
+                  Need funding that's flexible and repayable over time? Our
+                  Wonder Bank business loan provides options to support growth
+                  or investment in your business.
                 </p>
               </div>
             </div>
@@ -88,9 +73,9 @@ export default function Home() {
               </div>
               <div>
                 <p>
-                  Need funding that's flexible and repayable over time? Our Judo
-                  Bank business loan provides options to support growth or
-                  investment in your business.
+                  Need funding that's flexible and repayable over time? Our
+                  Wonder Bank business loan provides options to support growth
+                  or investment in your business.
                 </p>
               </div>
             </div>
@@ -108,6 +93,41 @@ export default function Home() {
                 it’s why our business bankers take the time to truly understand
                 you and your business, face-to-face.
               </h3>
+            </div>
+          </Container>
+        </Row>
+      </Container>
+
+      <Container fluid className={"container_border_primary"}>
+        <Row>
+          <Container className={"box_standard"}>
+            <div className={"box-child"}>
+              <div className={"box-icon"}>
+                <p className={"stats_big"}>$1 Billion</p>
+              </div>
+              <div>
+                <p style={{ textAlign: "center" }}>
+                  Largest capital raise in Australian history
+                </p>
+              </div>
+            </div>
+            <div className={"box-child"}>
+              <div className={"box-icon"}>
+                <p className={"stats_big"}>$2 Billion</p>
+              </div>
+              <div>
+                <p style={{ textAlign: "center" }}>
+                  Loans to small & medium-sized businesses
+                </p>
+              </div>
+            </div>
+            <div className={"box-child"}>
+              <div className={"box-icon"}>
+                <p className={"stats_big"}>$10 Billion</p>
+              </div>
+              <div>
+                <p style={{ textAlign: "center" }}>Waiting to be lent.</p>
+              </div>
             </div>
           </Container>
         </Row>

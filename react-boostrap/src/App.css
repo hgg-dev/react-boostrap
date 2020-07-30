@@ -1,7 +1,7 @@
 /*
  Color Scheme
- Primary: #4D28C4 
- Primary border: #280C83
+ Primary : #280C83
+ Primary light: #4D28C4 
  Secondary: #FF9D19
  Highlight: #D2F918
 
@@ -15,7 +15,9 @@
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -23,6 +25,12 @@ h2 {
   font-weight: bolder;
   font-size: 3rem !important;
   color: white;
+}
+h1,
+h3,
+h4,
+h5 {
+  color: #280c83;
 }
 
 .App {
@@ -143,16 +151,18 @@ h2 {
   height: 300px; /* height of container */
   overflow: hidden;
   position: relative;
-  z-index: 1000;
   margin-bottom: 40px;
+  background: linear-gradient(#280c83, #280c83);
 }
 
 .banner_image {
   display: block; /*remove inline-block spaces*/
   width: 100%; /*make image streatch*/
+  opacity: 0.5;
 }
 
 .banner_tag {
+  z-index: 1000;
   position: absolute;
   float: left;
   top: 100px;
@@ -174,8 +184,87 @@ h2 {
   border-radius: 15px 50px;
   width: 75%;
   margin: auto;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
 }
 
 .text_child_container {
   padding: 40px;
+}
+.btn-primary {
+  background-color: #280c83 !important;
+  border-color: white !important;
+}
+.dropdown-menu {
+  background-color: #280c83 !important;
+}
+.dropdown-menu a:hover {
+  background-color: #4d28c4 !important;
+}
+
+.spec_container {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.spec_child {
+  padding: 25px 12px;
+  width: 200px;
+  height: 200px;
+  border: 2px #280c83 solid;
+  border-radius: 15px 50px;
+  margin: 10px;
+}
+
+.special {
+  background-color: #280c83;
+  border: 2px white solid !important;
+  color: white !important;
+}
+.special h4 {
+  color: white !important;
+}
+
+.home_banner_container {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+.home_banner_tag {
+  position: absolute;
+  z-index: 999;
+  left: 100px;
+  top: 100px;
+}
+.home_banner_bottom1 {
+  position: absolute;
+  z-index: 999;
+  left: 100px;
+  top: 200px;
+}
+.home_banner_bottom2 {
+  position: absolute;
+  z-index: 998;
+  left: 280px;
+  top: 200px;
+}
+.how-it-works-box {
+  width: 200px;
+  height: 300px;
+  padding: 15px;
+}
+
+.fas.hit {
+  font-size: 80px;
+  color: #280c83;
+  padding: 0 40px;
+}
+.stats_big {
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bolder;
+  text-align: center;
 }

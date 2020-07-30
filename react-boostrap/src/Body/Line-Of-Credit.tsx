@@ -2,7 +2,7 @@ import React from "react";
 import { Jumbotron, Container, Row } from "react-bootstrap";
 import ApplyForm from "./Apply-Form";
 
-export default function BusinessLoans() {
+export default function LineOfCredit() {
   return (
     <>
       {" "}
@@ -10,7 +10,7 @@ export default function BusinessLoans() {
         <Row>
           <div className={"banner"}>
             <div className={"banner_tag"}>
-              <h2>Business Loans</h2>
+              <h2>Line of Credit</h2>
             </div>
             <img
               className={"banner_image"}
@@ -22,14 +22,24 @@ export default function BusinessLoans() {
         <Row>
           <div className={"text_container_light"}>
             <div className={"text_child_container"}>
+              <h3>Business banking made easier</h3>
+              <p>
+                We know the world of business zigs and zags. A line of credit
+                facility from Wonder Bank can help you best manage your cash
+                flow.
+              </p>
               <h3>Features</h3>
               <ul>
-                <li>Choice of Variable or Fixed interest rate.</li>
-                <li>Fixed Rate available for added certainty.</li>
-                <li>Flexible repayment options.</li>
-                <li>Principal and interest, or interest-only repayments.</li>
+                <li>
+                  Draw up to the approved limit with no scheduled repayments.
+                </li>
+                <li>Variable interest rate.</li>
               </ul>
-              <p></p>
+              <h3>Valuable for your business</h3>
+              <ul>
+                <li>Assisting to meet working capital needs.</li>
+                <li>Allows drawings and repayments to match your cash flow.</li>
+              </ul>
             </div>
           </div>
         </Row>

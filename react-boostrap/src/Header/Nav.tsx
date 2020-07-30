@@ -19,19 +19,21 @@ export default function NavHeader() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/business-loans">Business Loans</Nav.Link>
-            <Nav.Link href="/contacts">Contact</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+            <NavDropdown title="Business Loans" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/business-loans">
+                Small Business Loans
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
+              <NavDropdown.Item href="/line-of-credit">
+                Line of Credit
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/equipment-finance">
+                Equipment Finance
               </NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="/how-we-roll">How We Roll</Nav.Link>
+            <Nav.Link href="/contacts">Contact</Nav.Link>
           </Nav>
           <Form inline>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />

@@ -4,6 +4,8 @@ import "./App.css";
 import NavHeader from "./Header/Nav";
 import Home from "./Body/Home";
 import BusinessLoans from "./Body/Business-Loans";
+import LineOfCredit from "./Body/Line-Of-Credit";
+import EquipmentFinance from "./Body/Equipment-Finance";
 import Contacts from "./Body/Contacts";
 import { Footer } from "./Footer/Footer";
 import {
@@ -17,6 +19,7 @@ import {
   Row,
 } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import HowWeRoll from "./Body/HowWeRoll";
 
 function App() {
   return (
@@ -31,7 +34,19 @@ function App() {
               path="/business-loans"
               render={() => <BusinessLoans />}
             />
+            <Route
+              exact
+              path="/line-of-credit"
+              render={() => <LineOfCredit />}
+            />
+            <Route
+              exact
+              path="/equipment-finance"
+              render={() => <EquipmentFinance />}
+            />
+            <Route exact path="/how-we-roll" render={() => <HowWeRoll />} />
             <Route exact path="/contacts" render={() => <Contacts />} />
+
             <Footer />
           </Row>
         </Container>

@@ -2,7 +2,7 @@ import React from "react";
 import { Jumbotron, Container, Row } from "react-bootstrap";
 import ApplyForm from "./Apply-Form";
 
-export default function BusinessLoans() {
+export default function EquipmentFinance() {
   return (
     <>
       {" "}
@@ -10,7 +10,7 @@ export default function BusinessLoans() {
         <Row>
           <div className={"banner"}>
             <div className={"banner_tag"}>
-              <h2>Business Loans</h2>
+              <h2>Equipment Finance</h2>
             </div>
             <img
               className={"banner_image"}
@@ -22,12 +22,23 @@ export default function BusinessLoans() {
         <Row>
           <div className={"text_container_light"}>
             <div className={"text_child_container"}>
+              <h3>Every business has different needs</h3>
+              <p>
+                Whether it’s a new piece of equipment or an entire fleet, we’ll
+                help you choose the right loan with the right terms to suit your
+                business.
+              </p>
               <h3>Features</h3>
               <ul>
-                <li>Choice of Variable or Fixed interest rate.</li>
-                <li>Fixed Rate available for added certainty.</li>
+                <li>Fixed interest and repayments with an optional balloon.</li>
                 <li>Flexible repayment options.</li>
-                <li>Principal and interest, or interest-only repayments.</li>
+                <li>Flexible repayment options.</li>
+                <li>Tailor repayment frequency to match your cash flow.</li>
+              </ul>
+              <h3>Valuable for your business</h3>
+              <ul>
+                <li>Help you preserve your working capital.</li>
+                <li>Interest and asset depreciation may be tax deductible.</li>
               </ul>
               <p></p>
             </div>
