@@ -11,13 +11,16 @@ import {
 export default function NavHeader() {
   return (
     <>
-      <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">Wonder Bank</Navbar.Brand>
+      <Navbar fixed="top" expand="lg" style={{ backgroundColor: "#280c83" }}>
+        <Navbar.Brand className={"nav-white"} href="#home">
+          Wonder Bank
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/business-loans">Business Loans</Nav.Link>
+            <Nav.Link href="/contacts">Contact</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

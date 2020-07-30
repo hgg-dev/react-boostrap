@@ -8,13 +8,25 @@
  http://paletton.com/#uid=34e0I0ksRDihTLUnnGJBwv6CnnS
  */
 
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.container_border_primary {
-  background-color: #4d28c4;
-  margin: 30px 0;
+h1,
+h2,
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: 3rem !important;
+  color: white;
+}
+
+.App {
+  text-align: center;
 }
 
 .App-logo {
@@ -54,6 +66,26 @@
 
 /* Body */
 
+.container_border_primary {
+  background-image: linear-gradient(to right, #4d28c4, #280c83);
+  margin: 30px 0;
+}
+
+.container_border_grey {
+  background-image: linear-gradient(
+    to right,
+    rgb(165, 165, 165),
+    rgb(219, 219, 219)
+  );
+  margin: 30px 0;
+}
+
+.container_border_grey_round {
+  background-color: white;
+  border: 2px #4d28c4 solid;
+  border-radius: 15px 50px;
+}
+
 .box_standard {
   margin: 40px;
   display: flex;
@@ -67,12 +99,83 @@
   color: white;
 }
 
+.icon-large:hover {
+  font-size: 80px;
+  color: #ff9d19;
+  cursor: pointer;
+}
+
 .box-child {
   max-width: 300px;
   margin: 0 20px;
+}
+.box-icon {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.footer {
+  margin-top: 50px;
+  width: 100%;
+  min-height: 200px;
+  background-color: #280c83;
   display: flex;
   justify-content: center;
-  justify-items: center;
+  align-items: center;
 }
-.box-child .fas {
+.footer-left {
+  max-width: 400px;
+  margin-right: 100px;
+}
+.footer-right {
+  max-width: 400px;
+}
+
+.footerText {
+  max-width: 400px;
+  color: white;
+  font-size: 10px;
+  float: left;
+}
+
+.banner {
+  width: 100%;
+  height: 300px; /* height of container */
+  overflow: hidden;
+  position: relative;
+  z-index: 1000;
+  margin-bottom: 40px;
+}
+
+.banner_image {
+  display: block; /*remove inline-block spaces*/
+  width: 100%; /*make image streatch*/
+}
+
+.banner_tag {
+  position: absolute;
+  float: left;
+  top: 100px;
+  left: 50px;
+}
+
+.nav-link {
+  color: white;
+}
+.navbar-collapse a {
+  color: white !important;
+}
+.navbar-brand {
+  color: white !important;
+}
+
+.text_container_light {
+  border: 2px #280c83 solid;
+  border-radius: 15px 50px;
+  width: 75%;
+  margin: auto;
+}
+
+.text_child_container {
+  padding: 40px;
 }

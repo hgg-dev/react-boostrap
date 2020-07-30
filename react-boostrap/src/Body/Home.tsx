@@ -59,7 +59,7 @@ export default function Home() {
         <Row>
           <Container className={"box_standard"}>
             <div className={"box-child"}>
-              <div>
+              <div className={"box-icon"}>
                 <i className={"fas fa-home icon-large"}></i>
               </div>
               <div>
@@ -71,7 +71,7 @@ export default function Home() {
               </div>
             </div>
             <div className={"box-child"}>
-              <div>
+              <div className={"box-icon"}>
                 <i className={"fas fa-car icon-large"}></i>
               </div>
               <div>
@@ -83,7 +83,7 @@ export default function Home() {
               </div>
             </div>
             <div className={"box-child"}>
-              <div>
+              <div className={"box-icon"}>
                 <i className={"fas fa-building icon-large"}></i>
               </div>
               <div>
@@ -98,15 +98,35 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Jumbotron>
-        <Container>
-          <h1>Business finance</h1>
-          <p>
-            This is a modified jumbotron that occupies the entire horizontal
-            space of its parent.
-          </p>
-        </Container>
-      </Jumbotron>
+      <Container fluid className={"container_border_grey"}>
+        <Row>
+          <Container className={"box_standard"}>
+            <div>
+              <h3>
+                At Wonder Bank we’re determined to give Aussie businesses a
+                fairer go. We believe that in business, relationships matter;
+                it’s why our business bankers take the time to truly understand
+                you and your business, face-to-face.
+              </h3>
+            </div>
+          </Container>
+        </Row>
+      </Container>
+
+      <Container className={"container_border_grey_round"}>
+        <Row>
+          <Container className={"box_standard"}>
+            <div style={{ padding: "20px" }}>
+              <h3>
+                At Wonder Bank we’re determined to give Aussie businesses a
+                fairer go. We believe that in business, relationships matter;
+                it’s why our business bankers take the time to truly understand
+                you and your business, face-to-face.
+              </h3>
+            </div>
+          </Container>
+        </Row>
+      </Container>
     </>
   );
 }

@@ -4,6 +4,8 @@ import "./App.css";
 import NavHeader from "./Header/Nav";
 import Home from "./Body/Home";
 import BusinessLoans from "./Body/Business-Loans";
+import Contacts from "./Body/Contacts";
+import { Footer } from "./Footer/Footer";
 import {
   Navbar,
   Nav,
@@ -20,7 +22,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Container fluid>
+        <Container fluid style={{ margin: "0px" }}>
           <Row>
             <NavHeader />
             <Route exact path="/" render={() => <Home />} />
@@ -29,6 +31,8 @@ function App() {
               path="/business-loans"
               render={() => <BusinessLoans />}
             />
+            <Route exact path="/contacts" render={() => <Contacts />} />
+            <Footer />
           </Row>
         </Container>
       </Switch>

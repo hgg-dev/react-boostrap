@@ -1,15 +1,14 @@
 import React from "react";
 import { Jumbotron, Container, Row } from "react-bootstrap";
 
-export default function BusinessLoans() {
+export default function Contacts() {
   return (
     <>
-      {" "}
       <Container fluid>
         <Row>
           <div className={"banner"}>
             <div className={"banner_tag"}>
-              <h2>Business Loans</h2>
+              <h2>Contacts</h2>
             </div>
             <img
               className={"banner_image"}
@@ -21,7 +20,7 @@ export default function BusinessLoans() {
         <Row>
           <div className={"text_container_light"}>
             <div className={"text_child_container"}>
-              <h3>Features</h3>
+              <h3>Contact Us</h3>
               <ul>
                 <li>Choice of Variable or Fixed interest rate.</li>
                 <li>Fixed Rate available for added certainty.</li>
