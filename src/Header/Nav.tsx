@@ -33,6 +33,7 @@ export default function NavHeader() {
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/how-we-roll">How We Roll</Nav.Link>
+            <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/contacts">Contact</Nav.Link>
           </Nav>
           <Form inline>

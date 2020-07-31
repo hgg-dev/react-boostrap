@@ -7,6 +7,7 @@ import BusinessLoans from "./Body/Business-Loans";
 import LineOfCredit from "./Body/Line-Of-Credit";
 import EquipmentFinance from "./Body/Equipment-Finance";
 import Contacts from "./Body/Contacts";
+import About from "./Body/About";
 import { Footer } from "./Footer/Footer";
 import {
   Navbar,
@@ -46,7 +47,7 @@ function App() {
             />
             <Route exact path="/how-we-roll" render={() => <HowWeRoll />} />
             <Route exact path="/contacts" render={() => <Contacts />} />
-
+            <Route exact path="/about" render={() => <About />} />
             <Footer />
           </Row>
         </Container>

@@ -195,6 +195,10 @@ h5 {
   background-color: #280c83 !important;
   border-color: white !important;
 }
+.btn-primary:hover {
+  background-color: #4d28c4 !important;
+  border-color: white !important;
+}
 .dropdown-menu {
   background-color: #280c83 !important;
 }
@@ -209,6 +213,7 @@ h5 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 700px;
 }
 .spec_child {
   padding: 25px 12px;
@@ -245,6 +250,7 @@ h5 {
   left: 100px;
   top: 200px;
 }
+
 .home_banner_bottom2 {
   position: absolute;
   z-index: 998;
@@ -267,4 +273,17 @@ h5 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bolder;
   text-align: center;
+}
+.image-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0px;
+  background-color: #280c83;
+  opacity: 0.5;
+}
+.banner_image2 {
+  width: 100%;
+  opacity: 0.5;
 }
