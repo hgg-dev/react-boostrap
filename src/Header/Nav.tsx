@@ -12,7 +12,7 @@ export default function NavHeader() {
   return (
     <>
       <Navbar fixed="top" expand="lg" style={{ backgroundColor: "#280c83" }}>
-        <Navbar.Brand className={"nav-white"} href="#home">
+        <Navbar.Brand className={"nav-white"} href="/">
           Wonder Bank
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

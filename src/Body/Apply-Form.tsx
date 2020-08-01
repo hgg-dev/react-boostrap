@@ -14,22 +14,35 @@ export default function ApplyForm() {
 
             <Form>
               <Form.Group>
-                <Form.Control type="text" placeholder="Full Name" />
+                <Form.Control
+                  type="text"
+                  name="fullName"
+                  placeholder="Full Name"
+                  required
+                />
                 <br />
-                <Form.Control type="text" placeholder="Mobile Number" />
+                <Form.Control
+                  type="number"
+                  placeholder="Mobile Number"
+                  required
+                />
                 <br />
-                <Form.Control type="text" placeholder="Email" />
+                <Form.Control type="email" placeholder="Email" required />
                 <br />
-                <Form.Control type="text" placeholder="Loan Amount" />
+                <Form.Control
+                  type="number"
+                  placeholder="Loan Amount"
+                  required
+                />
                 <br />
-                <Form.Control as="select">
+                <Form.Control as="select" required>
                   <option>Business not started</option>
                   <option>Business trading within 1 year</option>
                   <option>Business trading 1 to 3 year</option>
                   <option>Business trading 3 year+</option>
                 </Form.Control>
                 <br />
-                <Form.Control as="select">
+                <Form.Control as="select" required>
                   <option>Term 1 year</option>
                   <option>Term 2 years</option>
                   <option>Term 3 years+</option>

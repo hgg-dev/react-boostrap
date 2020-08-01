@@ -15,13 +15,33 @@ export default function ContactForm() {
 
             <Form>
               <Form.Group>
-                <Form.Control type="text" placeholder="Full Name" />
+                <Form.Control
+                  type="text"
+                  name="fullName"
+                  placeholder="Full Name"
+                  required
+                />
                 <br />
-                <Form.Control type="text" placeholder="Mobile Number" />
+                <Form.Control
+                  type="number"
+                  name="mobileNumber"
+                  placeholder="Mobile Number"
+                  required
+                />
                 <br />
-                <Form.Control type="text" placeholder="Email" />
+                <Form.Control
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  required
+                />
                 <br />
-                <Form.Control type="text" placeholder="Comments" />
+                <Form.Control
+                  type="text"
+                  placeholder="Comments"
+                  name="comment"
+                  required
+                />
               </Form.Group>
               <Button variant="primary" type="submit">
                 Submit
