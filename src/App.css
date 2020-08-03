@@ -8,6 +8,13 @@
  http://paletton.com/#uid=34e0I0ksRDihTLUnnGJBwv6CnnS
  */
 
+:root {
+  --primary: #280c83 !important;
+  --pri: #280c83;
+  --pri-light: #4d28c4;
+  --sed: #ff9d19;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +37,7 @@ h1,
 h3,
 h4,
 h5 {
-  color: #280c83;
+  color: var(--pri);
 }
 
 .App {
@@ -75,7 +82,7 @@ h5 {
 /* Body */
 
 .container_border_primary {
-  background-image: linear-gradient(to right, #4d28c4, #280c83);
+  background-image: linear-gradient(to right, var(--pri-light), var(--pri));
   margin: 30px 0;
 }
 
@@ -90,7 +97,7 @@ h5 {
 
 .container_border_grey_round {
   background-color: white;
-  border: 2px #4d28c4 solid;
+  border: 2px var(--pri-light) solid;
   border-radius: 15px 50px;
 }
 
@@ -109,7 +116,7 @@ h5 {
 
 .icon-large:hover {
   font-size: 80px;
-  color: #ff9d19;
+  color: var(--sed);
   cursor: pointer;
 }
 
@@ -126,7 +133,7 @@ h5 {
   margin-top: 50px;
   width: 100%;
   min-height: 200px;
-  background-color: #280c83;
+  background-color: var(--pri);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -180,7 +187,7 @@ h5 {
 }
 
 .text_container_light {
-  border: 2px #280c83 solid;
+  border: 2px var(--pri) solid;
   border-radius: 15px 50px;
   width: 75%;
   margin: auto;
@@ -192,18 +199,18 @@ h5 {
   padding: 40px;
 }
 .btn-primary {
-  background-color: #280c83 !important;
+  background-color: var(--pri) !important;
   border-color: white !important;
 }
 .btn-primary:hover {
-  background-color: #4d28c4 !important;
+  background-color: var(--pri-light) !important;
   border-color: white !important;
 }
 .dropdown-menu {
-  background-color: #280c83 !important;
+  background-color: var(--pri) !important;
 }
 .dropdown-menu a:hover {
-  background-color: #4d28c4 !important;
+  background-color: var(--pri-light) !important;
 }
 
 .spec_container {
@@ -219,13 +226,13 @@ h5 {
   padding: 25px 12px;
   width: 200px;
   height: 200px;
-  border: 2px #280c83 solid;
+  border: 2px var(--pri) solid;
   border-radius: 15px 50px;
   margin: 10px;
 }
 
 .special {
-  background-color: #280c83;
+  background-color: var(--pri);
   border: 2px white solid !important;
   color: white !important;
 }
@@ -265,7 +272,7 @@ h5 {
 
 .fas.hit {
   font-size: 80px;
-  color: #280c83;
+  color: var(--pri);
   padding: 0 40px;
 }
 .stats_big {
@@ -280,7 +287,7 @@ h5 {
   width: 100%;
   overflow: hidden;
   margin: 30px 0px;
-  background-color: #280c83;
+  background-color: var(--pri);
   opacity: 0.5;
 }
 .banner_image2 {
