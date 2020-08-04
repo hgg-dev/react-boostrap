@@ -8,16 +8,16 @@
  http://paletton.com/#uid=34e0I0ksRDihTLUnnGJBwv6CnnS
  */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --primary: #280c83 !important;
   --pri: #280c83;
   --pri-light: #4d28c4;
   --sed: #ff9d19;
-}
-
-* {
-  margin: 0;
-  padding: 0;
 }
 
 h1,
