@@ -1,0 +1,23 @@
+.footer {
+  margin-top: 50px;
+  width: 100%;
+  min-height: 200px;
+  background-color: var(--pri);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-left {
+  max-width: 400px;
+  margin-right: 100px;
+}
+.footer-right {
+  max-width: 400px;
+}
+
+.footerText {
+  max-width: 400px;
+  color: white;
+  font-size: 10px;
+  float: left;
+}
