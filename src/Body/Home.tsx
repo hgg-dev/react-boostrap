@@ -13,13 +13,56 @@ import {
 } from "react-bootstrap";
 
 export default function Home() {
+  var visited = localStorage.getItem("visited");
+  if (visited) {
+  } else {
+    localStorage.setItem("visited", new Date().toString());
+  }
+
+  const test = () => {
+    console.log(1);
+  };
+
+  const test2 = (callback: any) => {
+    callback();
+    console.log(2);
+  };
+
+  test2(test);
+
+  // const test = () => {
+  //   console.log(1);
+  // };
+
+  // const test2 = () => {
+  //   console.log(2);
+  // };
+
+  // async function test3() {
+  //   await test();
+  //   test2();
+  // }
+
+  // test3();
+
+  // try {
+  //   // test();
+  //   // console.log("try");
+  // } catch (error) {
+  //   console.error(error);
+  // }
+
   return (
     <>
       <Container fluid>
         <Row>
           <div className={"home_banner_container"}>
             <div className={"home_banner_tag"}>
-              <h2>Let us be your lighthouse</h2>
+              <h2>
+                {visited
+                  ? "Welcome back, let us assist you."
+                  : "Let us be your lighthouse"}
+              </h2>
             </div>
             <div className={"home_banner_bottom1"}>
               <Button href="/business-Loans" style={{ width: "150px" }}>
