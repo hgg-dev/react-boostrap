@@ -13,28 +13,21 @@
   padding: 0;
 }
 
-:root {
-  --primary: #280c83 !important;
-  --pri: #280c83;
-  --pri-light: #4d28c4;
-  --sed: #ff9d19;
-  --font: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 $pri-color: #280c83;
 $pri-light: #4d28c4;
 $sed-color: #ff9d19;
 $pri-font: Verdana, Geneva, Tahoma, sans-serif;
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+@mixin w100 {
+  width: 100%;
+}
+
+@mixin font {
   font-family: $pri-font;
 }
 
 h2 {
+  @include font;
   font-weight: bolder;
   font-size: 3rem !important;
   color: white;
@@ -44,8 +37,5 @@ h3,
 h4,
 h5 {
   color: $pri-color;
-}
-
-.App {
-  text-align: center;
+  @include font;
 }

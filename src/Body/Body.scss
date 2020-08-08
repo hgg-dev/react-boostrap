@@ -31,12 +31,11 @@
 .icon-large {
   font-size: 80px;
   color: white;
-}
-
-.icon-large:hover {
-  font-size: 80px;
-  color: var(--sed);
-  cursor: pointer;
+  &:hover {
+    font-size: 80px;
+    color: $sed-color;
+    cursor: pointer;
+  }
 }
 
 .box-child {
@@ -49,7 +48,7 @@
 }
 
 .banner {
-  width: 100%;
+  @include w100;
   height: 300px; /* height of container */
   overflow: hidden;
   position: relative;
@@ -59,7 +58,7 @@
 
 .banner_image {
   display: block; /*remove inline-block spaces*/
-  width: 100%; /*make image streatch*/
+  @include w100; /*make image streatch*/
   opacity: 0.5;
 }
 
@@ -120,9 +119,9 @@
   background-color: $pri-color;
   border: 2px white solid !important;
   color: white !important;
-}
-.special h4 {
-  color: white !important;
+  h4 {
+    color: white !important;
+  }
 }
 
 .home_banner_container {
@@ -169,13 +168,13 @@
 .image-container {
   position: relative;
   height: 300px;
-  width: 100%;
+  @include w100;
   overflow: hidden;
   margin: 30px 0px;
   background-color: $pri-color;
   opacity: 0.5;
 }
 .banner_image2 {
-  width: 100%;
+  @include w100;
   opacity: 0.5;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Global.scss";
 import "./Body/Body.scss";
-import "./Header/Nav.css";
+import "./Header/Nav.scss";
 import "./Footer/Footer.scss";
 import NavHeader from "./Header/Nav";
 import Home from "./Body/Home";
