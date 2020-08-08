@@ -1,8 +1,10 @@
+@import "../Global.scss";
+
 .footer {
   margin-top: 50px;
   width: 100%;
   min-height: 200px;
-  background-color: var(--pri);
+  background-color: $pri-color;
   display: flex;
   justify-content: center;
   align-items: center;

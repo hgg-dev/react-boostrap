@@ -1,9 +1,8 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import "./Body/Body.css";
+import "./Global.scss";
+import "./Body/Body.scss";
 import "./Header/Nav.css";
-import "./Footer/Footer.css";
+import "./Footer/Footer.scss";
 import NavHeader from "./Header/Nav";
 import Home from "./Body/Home";
 import BusinessLoans from "./Body/Business-Loans";
