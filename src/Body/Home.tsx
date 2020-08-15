@@ -19,39 +19,6 @@ export default function Home() {
     localStorage.setItem("visited", new Date().toString());
   }
 
-  const test = () => {
-    console.log(1);
-  };
-
-  const test2 = (callback: any) => {
-    callback();
-    console.log(2);
-  };
-
-  test2(test);
-
-  // const test = () => {
-  //   console.log(1);
-  // };
-
-  // const test2 = () => {
-  //   console.log(2);
-  // };
-
-  // async function test3() {
-  //   await test();
-  //   test2();
-  // }
-
-  // test3();
-
-  // try {
-  //   // test();
-  //   // console.log("try");
-  // } catch (error) {
-  //   console.error(error);
-  // }
-
   return (
     <>
       <Container fluid>

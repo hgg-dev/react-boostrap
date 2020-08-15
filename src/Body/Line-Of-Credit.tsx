@@ -57,17 +57,14 @@ export default function LineOfCredit() {
               <p>Generally secured by the asset being financed.</p>
             </div>
             <div className={"spec_child "}>
-              {" "}
               <h4>Term</h4>
               <p>Up to 5 years matched to the effective life of the asset.</p>
             </div>
             <div className={"spec_child special"}>
-              {" "}
               <h4>Interest Rate</h4>
               <p>Fixed interest rate.</p>
             </div>
             <div className={"spec_child "}>
-              {" "}
               <h4>Repayments</h4>
               <p>
                 P & I with an optional balloon. Monthly, Quarterly and Seasonal
