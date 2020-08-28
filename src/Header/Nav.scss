@@ -1,7 +1,10 @@
 @import "../Global.scss";
 
+.nav-bar {
+  color: $pri-color;
+}
 .nav-link {
-  color: white;
+  color: $pri-color;
 }
 .navbar-collapse a {
   color: white !important;

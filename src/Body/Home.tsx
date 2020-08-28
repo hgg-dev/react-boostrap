@@ -52,9 +52,9 @@ export default function Home() {
 
       <Container fluid className={"container_border_primary"}>
         <Row>
-          <Container className={"box_standard"}>
-            <div className={"box-child"}>
-              <div className={"box-icon"}>
+          <div className={"box-grid"}>
+            <div className={"child-grid"}>
+              <div className={""}>
                 <i className={"fas fa-home icon-large"}></i>
               </div>
               <div>
@@ -65,8 +65,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className={"box-child"}>
-              <div className={"box-icon"}>
+            <div className={"child-grid"}>
+              <div className={""}>
                 <i className={"fas fa-car icon-large"}></i>
               </div>
               <div>
@@ -77,8 +77,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className={"box-child"}>
-              <div className={"box-icon"}>
+            <div className={"child-grid"}>
+              <div className={""}>
                 <i className={"fas fa-building icon-large"}></i>
               </div>
               <div>
@@ -89,7 +89,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </Container>
+          </div>
         </Row>
       </Container>
 
@@ -110,8 +110,8 @@ export default function Home() {
 
       <Container fluid className={"container_border_primary"}>
         <Row>
-          <Container className={"box_standard"}>
-            <div className={"box-child"}>
+          <div className={"box-grid"}>
+            <div className={"child-grid"}>
               <div className={"box-icon"}>
                 <p className={"stats_big"}>$1 Billion</p>
               </div>
@@ -121,7 +121,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className={"box-child"}>
+            <div className={"child-grid"}>
               <div className={"box-icon"}>
                 <p className={"stats_big"}>$2 Billion</p>
               </div>
@@ -131,7 +131,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className={"box-child"}>
+            <div className={"child-grid"}>
               <div className={"box-icon"}>
                 <p className={"stats_big"}>$10 Billion</p>
               </div>
@@ -139,7 +139,7 @@ export default function Home() {
                 <p style={{ textAlign: "center" }}>Waiting to be lent.</p>
               </div>
             </div>
-          </Container>
+          </div>
         </Row>
       </Container>
 
