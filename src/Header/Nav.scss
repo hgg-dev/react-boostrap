@@ -12,3 +12,10 @@
 .navbar-brand {
   color: white !important;
 }
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .nav-search {
+    width: auto !important;
+    margin-right: 10px;
+  }
+}

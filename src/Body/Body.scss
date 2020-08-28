@@ -166,6 +166,50 @@
   left: 280px;
   top: 200px;
 }
+@media only screen and (max-width: 768px) {
+  .home_banner_tag {
+    position: absolute;
+    z-index: 999;
+    left: 50px;
+    top: 100px;
+  }
+  .home_banner_bottom1 {
+    position: absolute;
+    z-index: 999;
+    left: 100px;
+    top: 250px;
+  }
+
+  .home_banner_bottom2 {
+    position: absolute;
+    z-index: 998;
+    left: 280px;
+    top: 250px;
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .home_banner_tag {
+    position: absolute;
+    z-index: 999;
+    left: 50px;
+    top: 100px;
+  }
+  .home_banner_bottom1 {
+    position: absolute;
+    z-index: 999;
+    left: 55px;
+    top: 250px;
+  }
+
+  .home_banner_bottom2 {
+    position: absolute;
+    z-index: 998;
+    left: 226px;
+    top: 250px;
+  }
+}
+
 .how-it-works-box {
   width: 200px;
   height: 300px;

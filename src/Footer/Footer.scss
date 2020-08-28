@@ -23,3 +23,15 @@
   font-size: 10px;
   float: left;
 }
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .footer-left {
+    max-width: 400px;
+    margin-right: 0px;
+    margin-left: 10px;
+  }
+
+  .footer {
+    margin-top: 10px;
+  }
+}

@@ -104,6 +104,7 @@ export default function ApplyForm() {
                 {formik.errors.mobileNumber ? (
                   <div>{formik.errors.mobileNumber}</div>
                 ) : null}
+                <br />
                 <Form.Control
                   type="email"
                   placeholder="Email"

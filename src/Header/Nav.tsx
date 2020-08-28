@@ -37,7 +37,11 @@ export default function NavHeader() {
             <Nav.Link href="/contacts">Contact</Nav.Link>
           </Nav>
           <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+            <FormControl
+              type="text"
+              placeholder="Search"
+              className="mr-sm-2 nav-search"
+            />
             <Button variant="outline-success">Search</Button>
           </Form>
         </Navbar.Collapse>
