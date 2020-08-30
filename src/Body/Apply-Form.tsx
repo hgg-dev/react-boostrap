@@ -9,6 +9,8 @@ import {
   Field,
   FieldProps,
 } from "formik";
+import classNames from "classnames";
+import "./Body.scss";
 
 export default function ApplyForm() {
   const [state, setState] = useState({
@@ -48,10 +50,12 @@ export default function ApplyForm() {
         .required("Full name is required"),
       email: Yup.string().email("Invalid email address").required("Required"),
       mobileNumber: Yup.string()
-        .max(20, "Must be 20 characters or less")
+        .min(10, "Must be 10 digits")
+        .max(10, "Must be 10 digits")
         .required("Mobile number is required"),
       loanAmount: Yup.string()
-        .max(20, "Must be 20 characters or less")
+        .min(4, "Loan size must be above $5,000")
+        .max(8, "Loan size must be below $10,000,000")
         .required("Loan amount is required"),
       businessStage: Yup.string().required("Please select an option"),
       term: Yup.string().required("Please select an option"),
@@ -63,11 +67,10 @@ export default function ApplyForm() {
 
   let con = false;
 
-  function test() {
-    console.log("test", con);
-    setState({ fullName: true });
-    return <div>{formik.errors.fullName}</div>;
-  }
+  const validateStyle = (field: string) => {
+    //@ts-ignore
+    return formik.touched[field] && formik.errors[field];
+  };
 
   return (
     <>
@@ -82,66 +85,92 @@ export default function ApplyForm() {
             <form onSubmit={formik.handleSubmit}>
               <Form.Group>
                 <Form.Control
-                  style={con ? { border: "1px solid red" } : {}}
+                  className={classNames({
+                    "invalid-border": validateStyle("fullName"),
+                  })}
                   type="text"
-                  // name="fullName"
+                  name="fullName"
                   placeholder="Full Name"
-                  // onChange={formik.handleChange}
+                  onChange={formik.handleChange}
                   // // onBlur={formik.handleBlur}
-                  // value={formik.values.fullName}
-                  // onBlur={formik.handleBlur}
+                  value={formik.values.fullName}
+                  onBlur={formik.handleBlur}
 
                   // Shorthand replaces name, onChange, onBlur
-                  {...formik.getFieldProps("fullName")}
+                  // {...formik.getFieldProps("fullName")}
                 />
-                {formik.errors.fullName ? test() : null}
+                {formik.touched.fullName && formik.errors.fullName ? (
+                  <div>{formik.errors.fullName}</div>
+                ) : null}
                 <br />
                 <Form.Control
+                  className={classNames({
+                    "invalid-border": validateStyle("mobileNumber"),
+                  })}
                   type="number"
                   placeholder="Mobile Number"
                   {...formik.getFieldProps("mobileNumber")}
                 />
-                {formik.errors.mobileNumber ? (
+                {formik.touched.mobileNumber && formik.errors.mobileNumber ? (
                   <div>{formik.errors.mobileNumber}</div>
                 ) : null}
                 <br />
                 <Form.Control
+                  className={classNames({
+                    "invalid-border": validateStyle("email"),
+                  })}
                   type="email"
                   placeholder="Email"
                   {...formik.getFieldProps("email")}
                 />
-                {formik.errors.email ? <div>{formik.errors.email}</div> : null}
+                {formik.touched.email && formik.errors.email ? (
+                  <div>{formik.errors.email}</div>
+                ) : null}
                 <br />
                 <Form.Control
+                  className={classNames({
+                    "invalid-border": validateStyle("loanAmount"),
+                  })}
                   type="number"
                   placeholder="Loan Amount"
                   {...formik.getFieldProps("loanAmount")}
                 />
-                {formik.errors.loanAmount ? (
+                {formik.touched.loanAmount && formik.errors.loanAmount ? (
                   <div>{formik.errors.loanAmount}</div>
                 ) : null}
                 <br />
                 <Form.Control
+                  className={classNames({
+                    "invalid-border": validateStyle("businessStage"),
+                  })}
                   as="select"
                   {...formik.getFieldProps("businessStage")}
                 >
-                  <option></option>
+                  <option ></option>
                   <option>Business not started</option>
                   <option>Business trading within 1 year</option>
                   <option>Business trading 1 to 3 year</option>
                   <option>Business trading 3 year+</option>
                 </Form.Control>
-                {formik.errors.businessStage ? (
+                {formik.touched.businessStage && formik.errors.businessStage ? (
                   <div>{formik.errors.businessStage}</div>
                 ) : null}
                 <br />
-                <Form.Control as="select" {...formik.getFieldProps("term")}>
+                <Form.Control
+                  className={classNames({
+                    "invalid-border": validateStyle("term"),
+                  })}
+                  as="select"
+                  {...formik.getFieldProps("term")}
+                >
                   <option></option>
                   <option>Term 1 year</option>
                   <option>Term 2 years</option>
                   <option>Term 3 years+</option>
                 </Form.Control>
-                {formik.errors.term ? <div>{formik.errors.term}</div> : null}
+                {formik.touched.term && formik.errors.term ? (
+                  <div>{formik.errors.term}</div>
+                ) : null}
               </Form.Group>
               <Button variant="primary" type="submit">
                 Submit
