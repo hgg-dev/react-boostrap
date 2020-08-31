@@ -14,7 +14,7 @@ export default function Contacts() {
             <img
               className={"banner_image"}
               src="./images/banner-contact.jpeg"
-              alt="Third slide"
+              alt="business owner"
             />
           </div>
         </Row>

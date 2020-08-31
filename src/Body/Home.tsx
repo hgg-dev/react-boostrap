@@ -44,7 +44,7 @@ export default function Home() {
             <img
               className={"home_banner_image"}
               src="./images/banner-lighthouse-sm.png"
-              alt="Third slide"
+              alt="light house"
             />
           </div>
         </Row>

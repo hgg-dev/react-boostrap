@@ -13,7 +13,7 @@ export default function About() {
             <img
               className={"banner_image"}
               src="./images/banner-roll.jpg"
-              alt="Third slide"
+              alt="contact us"
             />
           </div>
         </Row>
@@ -43,7 +43,7 @@ export default function About() {
               <img
                 className={"banner_image2"}
                 src="./images/business-owner1.png"
-                alt=""
+                alt="business owner"
               />
             </div>
           </Row>

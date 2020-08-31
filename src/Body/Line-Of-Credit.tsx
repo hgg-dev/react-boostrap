@@ -15,7 +15,7 @@ export default function LineOfCredit() {
             <img
               className={"banner_image"}
               src="./images/banner1.jpg"
-              alt="Third slide"
+              alt="business owner"
             />
           </div>
         </Row>
