@@ -10,11 +10,7 @@
 }
 
 .container_border_grey {
-  background-image: linear-gradient(
-    to right,
-    rgb(165, 165, 165),
-    rgb(219, 219, 219)
-  );
+  background-image: linear-gradient(to right, rgb(165, 165, 165), rgb(219, 219, 219));
   margin: 30px 0;
 }
 
@@ -99,6 +95,7 @@
   padding: 40px;
   max-width: 800px;
   margin: 0 auto;
+  min-width: 620px;
 }
 .btn-primary {
   background-color: $pri-color !important;
@@ -241,6 +238,10 @@
     z-index: 998;
     left: 280px;
     top: 250px;
+  }
+
+  .text_child_container {
+    min-width: auto;
   }
 }
 
