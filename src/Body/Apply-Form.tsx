@@ -14,26 +14,26 @@ import classNames from "classnames";
 import "./Body.scss";
 
 export default function ApplyForm() {
-  // const [state, setState] = useState({
-  //   fullName: false,
-  // });
+  const [state, setState] = useState({
+    fullName: false,
+  });
 
-  // const validate = (values: any) => {
-  //   const errors = {
-  //     fullName: "",
-  //     email: "",
-  //     mobileNumber: "",
-  //     loanAmount: "",
-  //     businessStage: "",
-  //     term: "",
-  //   };
-  //   if (!values.fullName) {
-  //     errors.fullName = "Required";
-  //   } else if (values.fullName.length > 15) {
-  //     errors.fullName = "Must be 15 characters or less";
-  //   }
-  //   return errors;
-  // };
+  const validate = (values: any) => {
+    const errors = {
+      fullName: "",
+      email: "",
+      mobileNumber: "",
+      loanAmount: "",
+      businessStage: "",
+      term: "",
+    };
+    if (!values.fullName) {
+      errors.fullName = "Required";
+    } else if (values.fullName.length > 15) {
+      errors.fullName = "Must be 15 characters or less";
+    }
+    return errors;
+  };
 
   const formik = useFormik({
     initialValues: {
@@ -49,9 +49,7 @@ export default function ApplyForm() {
       fullName: Yup.string()
         .min(3, "Must be 3 characters")
         .required("Full name is required"),
-      email: Yup.string()
-        .email("Invalid email address")
-        .required("Email is required"),
+      email: Yup.string().email("Invalid email address").required("Required"),
       mobileNumber: Yup.string()
         .min(10, "Must be 10 digits")
         .max(10, "Must be 10 digits")
@@ -99,15 +97,15 @@ export default function ApplyForm() {
                     "invalid-border": validateStyle("fullName"),
                   })}
                   type="text"
-                  //name="fullName"
+                  name="fullName"
                   placeholder="Full Name"
-                  // onChange={formik.handleChange}
-                  // // // onBlur={formik.handleBlur}
-                  // value={formik.values.fullName}
-                  // onBlur={formik.handleBlur}
+                  onChange={formik.handleChange}
+                  // // onBlur={formik.handleBlur}
+                  value={formik.values.fullName}
+                  onBlur={formik.handleBlur}
 
                   // Shorthand replaces name, onChange, onBlur
-                  {...formik.getFieldProps("fullName")}
+                  // {...formik.getFieldProps("fullName")}
                 />
                 {formik.touched.fullName && formik.errors.fullName ? (
                   <div>{formik.errors.fullName}</div>
@@ -171,11 +169,15 @@ export default function ApplyForm() {
                   as="select"
                   {...formik.getFieldProps("businessStage")}
                 >
+<<<<<<< HEAD
                   <option></option>
 =======
                 <br />
                 <Form.Control as="select" required>
 >>>>>>> parent of b8ad212... update
+=======
+                  <option ></option>
+>>>>>>> parent of bb731a1... update
                   <option>Business not started</option>
                   <option>Business trading within 1 year</option>
                   <option>Business trading 1 to 3 year</option>
