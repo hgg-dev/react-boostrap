@@ -149,6 +149,7 @@ export default function ApplyForm() {
 <<<<<<< HEAD
                   <option></option>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 <br />
                 <Form.Control as="select" required>
@@ -156,6 +157,8 @@ export default function ApplyForm() {
 =======
                   <option ></option>
 >>>>>>> parent of bb731a1... update
+=======
+>>>>>>> parent of 3d830c8... update
 =======
 >>>>>>> parent of 3d830c8... update
                   <option>Business not started</option>
