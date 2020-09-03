@@ -15,7 +15,7 @@ export default function HowWeRoll() {
             <img
               className={"banner_image"}
               src="./images/banner-roll.jpg"
-              alt="how we roll"
+              alt="Third slide"
             />
           </div>
         </Row>
