@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 import { Jumbotron, Container, Form, Row, Button } from "react-bootstrap";
 import * as Yup from "yup";
@@ -74,6 +75,12 @@ export default function ApplyForm() {
     return formik.touched[field] && formik.errors[field];
   };
 
+=======
+import React from "react";
+import { Jumbotron, Container, Row, Form, Button } from "react-bootstrap";
+
+export default function ApplyForm() {
+>>>>>>> parent of b8ad212... update
   return (
     <>
       <Row>
@@ -84,9 +91,10 @@ export default function ApplyForm() {
               Why wait? Find out whether you are eligible in a few easy steps.
             </p>
 
-            <form onSubmit={formik.handleSubmit}>
+            <Form>
               <Form.Group>
                 <Form.Control
+<<<<<<< HEAD
                   className={classNames({
                     "invalid-border": validateStyle("fullName"),
                   })}
@@ -104,6 +112,13 @@ export default function ApplyForm() {
                 {formik.touched.fullName && formik.errors.fullName ? (
                   <div>{formik.errors.fullName}</div>
                 ) : null}
+=======
+                  type="text"
+                  name="fullName"
+                  placeholder="Full Name"
+                  required
+                />
+>>>>>>> parent of b8ad212... update
                 <br />
                 <Form.Control
                   className={classNames({
@@ -111,6 +126,7 @@ export default function ApplyForm() {
                   })}
                   type="number"
                   placeholder="Mobile Number"
+<<<<<<< HEAD
                   {...formik.getFieldProps("mobileNumber")}
                 />
                 {formik.touched.mobileNumber && formik.errors.mobileNumber ? (
@@ -128,6 +144,12 @@ export default function ApplyForm() {
                 {formik.touched.email && formik.errors.email ? (
                   <div>{formik.errors.email}</div>
                 ) : null}
+=======
+                  required
+                />
+                <br />
+                <Form.Control type="email" placeholder="Email" required />
+>>>>>>> parent of b8ad212... update
                 <br />
                 <Form.Control
                   className={classNames({
@@ -135,8 +157,9 @@ export default function ApplyForm() {
                   })}
                   type="number"
                   placeholder="Loan Amount"
-                  {...formik.getFieldProps("loanAmount")}
+                  required
                 />
+<<<<<<< HEAD
                 {formik.touched.loanAmount && formik.errors.loanAmount ? (
                   <div>{formik.errors.loanAmount}</div>
                 ) : null}
@@ -149,11 +172,16 @@ export default function ApplyForm() {
                   {...formik.getFieldProps("businessStage")}
                 >
                   <option></option>
+=======
+                <br />
+                <Form.Control as="select" required>
+>>>>>>> parent of b8ad212... update
                   <option>Business not started</option>
                   <option>Business trading within 1 year</option>
                   <option>Business trading 1 to 3 year</option>
                   <option>Business trading 3 year+</option>
                 </Form.Control>
+<<<<<<< HEAD
                 {formik.touched.businessStage && formik.errors.businessStage ? (
                   <div>{formik.errors.businessStage}</div>
                 ) : null}
@@ -166,18 +194,25 @@ export default function ApplyForm() {
                   {...formik.getFieldProps("term")}
                 >
                   <option></option>
+=======
+                <br />
+                <Form.Control as="select" required>
+>>>>>>> parent of b8ad212... update
                   <option>Term 1 year</option>
                   <option>Term 2 years</option>
                   <option>Term 3 years+</option>
                 </Form.Control>
+<<<<<<< HEAD
                 {formik.touched.term && formik.errors.term ? (
                   <div>{formik.errors.term}</div>
                 ) : null}
+=======
+>>>>>>> parent of b8ad212... update
               </Form.Group>
               <Button variant="primary" type="submit">
                 Submit
               </Button>
-            </form>
+            </Form>
           </div>
         </div>
       </Row>
