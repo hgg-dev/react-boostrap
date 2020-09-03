@@ -95,7 +95,6 @@
   padding: 40px;
   max-width: 800px;
   margin: 0 auto;
-  min-width: 620px;
 }
 .btn-primary {
   background-color: $pri-color !important;
@@ -143,8 +142,6 @@
   position: relative;
   height: 400px;
   overflow: hidden;
-  width: 100%;
-  background-color: #25486e;
 }
 .home_banner_tag {
   position: absolute;
@@ -239,10 +236,6 @@
     z-index: 998;
     left: 280px;
     top: 250px;
-  }
-
-  .text_child_container {
-    min-width: auto;
   }
 }
 
