@@ -8,15 +8,27 @@
  http://paletton.com/#uid=34e0I0ksRDihTLUnnGJBwv6CnnS
  */
 
+$pri-color: #280c83;
+$pri-light: #4d28c4;
+$sed-color: #ff9d19;
+$pri-font: Verdana, Geneva, Tahoma, sans-serif;
+$mobile-breakpoint: 450px;
+// $current-browser-width:
+
 * {
   margin: 0;
   padding: 0;
 }
 
-$pri-color: #280c83;
-$pri-light: #4d28c4;
-$sed-color: #ff9d19;
-$pri-font: Verdana, Geneva, Tahoma, sans-serif;
+:root {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  :root {
+    font-size: 14px;
+  }
+}
 
 @mixin w100 {
   width: 100%;
